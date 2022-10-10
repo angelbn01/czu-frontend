@@ -1,0 +1,32 @@
+body.show{
+    font-family: Inter, sans-serif;
+    background-color: rgb(228, 227, 227);
+}
+
+.presentation section{
+    /* EACH SECTION WILL COVER ALL THE WINDOW  */
+    width: calc(100vw - 20vw);
+    height: calc(100vh - 20vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10vh 10vw;
+    font-size: 48px;
+    text-align: center;
+    
+}
+
+.presentation section ul li, .presentation section p{
+    font-size: 25px;
+}
+
+.tools{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.chapter{
+    display: flex;
+
+}
