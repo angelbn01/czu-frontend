@@ -22,11 +22,32 @@ body.show{
 
 .tools{
     position: fixed;
-    top: 0;
-    left: 0;
+    width: 80%;
+    height: 10%;
+    top: 3%;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    padding: 15px;
 }
 
 .chapter{
     display: flex;
 
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
