@@ -51,3 +51,13 @@ body.show{
     flex-direction: row;
     justify-content: center;
 }
+
+#icon-container{
+    display: flex;
+    justify-content: center;
+}
+
+#container-strong{
+    display: flex;
+    justify-content: center;
+}
