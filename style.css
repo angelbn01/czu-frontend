@@ -23,7 +23,7 @@ body.show{
 .tools{
     position: fixed;
     width: 80%;
-    height: 10%;
+    height: 15%;
     top: 3%;
     left: 8%;
     display: flex;
@@ -33,6 +33,12 @@ body.show{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     background-color: white;
     padding: 15px;
+    opacity: 0%;
+    transition: all 300ms;
+}
+
+.tools:hover{
+    opacity: 100%;
 }
 
 .chapter{
@@ -60,4 +66,13 @@ body.show{
 #container-strong{
     display: flex;
     justify-content: center;
+}
+
+.button{
+    margin: 5px;
+    font-size: 1.6em;
+}
+
+.button:link, .button:visited, .button:hover, .button:active{
+    color: black;
 }
