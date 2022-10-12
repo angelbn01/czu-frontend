@@ -18,10 +18,10 @@ const titles = document.querySelectorAll("#titles > span");
 function moveChapter(amount){
     titles[chapter].style.display = "none";
     chapter += amount;
-    if (chapter < 0){
+    if (chapter <= 0){
         chapter = 0;
-    } else if (chapter == chapterLenghts[chapter]){
-        chapter = chapterLenghts[chapter] - 1;
+    } else if (chapter == chapterLenghts.length){
+        chapter = chapterLenghts.length - 1;
     }
     titles[chapter].querySelector(".position").innerHTML = slides[chapter] + 1;
     titles[chapter].style.display = "inline";
@@ -47,8 +47,8 @@ nextSlide.addEventListener("click", (e) => {
 previousSlide.addEventListener("click", (e) => moveSlide(-1));
 
 restart.addEventListener("click", (e) => {
-    moveSlide(- slides[chapter]);
     moveChapter(- chapter);
+    moveSlide(- slides[chapter]);
 })
 
 nextChapter.addEventListener("click", (e) => {
