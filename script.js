@@ -26,6 +26,9 @@ function moveChapter(amount){
     titles[chapter].querySelector(".position").innerHTML = slides[chapter] + 1;
     titles[chapter].style.display = "inline";
     presentation.style.translate = "-" + slides[chapter] + "00vw -" + chapter + "00vh";
+    if(amount != 0){
+        slides[chapter - amount] = 0;
+    }
 }
 
 
