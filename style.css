@@ -1,6 +1,6 @@
 body.show{
     font-family: Inter, sans-serif;
-    background-color: rgb(228, 227, 227);
+    background: linear-gradient(90deg, rgba(23,108,251,1) 0%, rgba(231,240,251,1) 83%);
     overflow: hidden;
     /* WE CAN'T SCRALL, WHAT IS NOT SHOWED IN THE PAGE, IS NOT ACCESIBLE SCROLLING, WE MADE THIS WITH THE overflow:hidden */
 }
