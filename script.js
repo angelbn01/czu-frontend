@@ -12,6 +12,23 @@ const slides = chaptersArr.map((chapter) => 0);
 const titles = document.querySelectorAll("#titles > span");
 
 
+document.onkeydown = keyTreatment;
+
+function keyTreatment(event){
+    if(event.keyCode == "39"){ //RIGHT KEY
+        moveSlide(1);
+    }
+    else if(event.keyCode == "37"){ //LEFT KEY
+        moveSlide(-1);
+    }
+    else if(event.keyCode == "38"){
+        moveChapter(-1);
+    }
+    else if(event.keyCode == "40"){
+        moveChapter(1);
+    }
+}
+
 
 // nextSlide.addEventListener("click", (e) => console.log("I was clicked"));
 
