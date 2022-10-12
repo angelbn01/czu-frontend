@@ -91,6 +91,8 @@ button.icon{
 
 button.icon:hover{
     transform: scale(1.4, 1.4);
+    background-color: gainsboro;
+    border-radius: 8px;
 }
 
 span.position{
