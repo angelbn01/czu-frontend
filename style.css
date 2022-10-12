@@ -71,16 +71,14 @@ body.show{
     justify-content: center;
 }
 
-.button{
+button.icon{
     margin: 5px;
     font-size: 1.6em;
+    background-color: transparent;
+    border: none;
     transition: all 300ms;
 }
 
-.button:link, .button:visited, .button:hover, .button:active{
-    color: black;
-}
-
-.button:hover{
+button.icon:hover{
     transform: scale(1.3, 1.3);
 }
